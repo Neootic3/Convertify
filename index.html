@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Convertify</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Convertify</h1>
+    
+    <select id="type">
+      <option value="binary">Binary</option>
+    </select>
+    
+    <form onsubmit="return false">
+      <label for="input-box">Input</label>
+      <textarea id="input-box" placeholder="Enter text..."></textarea>
+      
+      <hr>
+      
+      <label for="output-box">Output</label>
+      <textarea id="output-box" placeholder="Result..." readonly></textarea>
+    </form>
+    
+    <button class="convert-btn" id="convert-btn">Convert</button>
+    <footer>&copy; Convertify 2025</footer>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
