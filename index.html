@@ -13,10 +13,14 @@
   <div class="container">
     <h1>Convertify</h1>
     
-    <select id="type">
+    <select id="format">
       <option value="binary">Binary</option>
+      <option value="hex">Hex</option>
     </select>
-    
+    <select id="type">
+      <option value="encode">Encode</option>
+      <option value="decode">Decode</option>
+    </select>
     <form onsubmit="return false">
       <label for="input-box">Input</label>
       <textarea id="input-box" placeholder="Enter text..."></textarea>
@@ -26,7 +30,7 @@
       <label for="output-box">Output</label>
       <textarea id="output-box" placeholder="Result..." readonly></textarea>
     </form>
-    
+    <button id="copy">Copy Output</button>
     <button class="convert-btn" id="convert-btn">Convert</button>
     <footer>&copy; Convertify 2025</footer>
   </div>
